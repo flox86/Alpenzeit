@@ -19,8 +19,6 @@ ESP32-based timer with Wi-Fi access point, push button control and a modern web 
 
 ![Demo](docs/demo.gif)
 
-👉 *(You can add screenshots later in the `docs/` folder)*
-
 ---
 
 ## ✨ Features

@@ -155,4 +155,3 @@ const char INDEX_HTML[] PROGMEM = R"rawliteral(
   </script>
 </body>
 </html>
-)rawliteral";

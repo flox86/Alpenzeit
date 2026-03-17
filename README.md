@@ -47,6 +47,9 @@ ESP32-based timer with Wi-Fi access point, push button control and a modern web 
 
 👉 GPIO27 is configured as `INPUT_PULLDOWN`
 
+![Hardware01](docs/Hardware01.png)
+
+![Hardware02](docs/Hardware02.png)
 ---
 
 ## 🎮 Controls

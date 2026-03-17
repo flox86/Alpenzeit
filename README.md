@@ -1,6 +1,3 @@
-# Alpenzeit
-ESP32 timer with Wi-Fi access point, push button control and live web interface via WebSocket.
-
 # AlpenZeit
 
 ![Platform](https://img.shields.io/badge/platform-ESP32-blue)
@@ -8,75 +5,75 @@ ESP32 timer with Wi-Fi access point, push button control and live web interface 
 ![Status](https://img.shields.io/badge/status-stable-brightgreen)
 ![License](https://img.shields.io/badge/license-non--commercial-lightgrey)
 
-ESP32-basierter Timer mit lokalem WLAN (Access Point), Tastersteuerung und moderner Weboberfläche mit Echtzeit-Anzeige via WebSockets.
+ESP32-based timer with Wi-Fi access point, push button control and a modern web interface with real-time updates via WebSockets.
 
 ---
 
 ## 📸 Demo
 
-### Webinterface
+### Web Interface
 
 ![Web UI](docs/webui.png)
 
-### Live-Timer (GIF)
+### Live Timer (GIF)
 
 ![Demo](docs/demo.gif)
 
-👉 *(Screenshots kannst du später einfach in den `docs/`-Ordner legen)*
+👉 *(You can add screenshots later in the `docs/` folder)*
 
 ---
 
 ## ✨ Features
 
-* ⏱️ Timer / Stoppuhr mit Millisekunden-Anzeige
-* 📡 Eigenes WLAN (kein Router nötig)
-* 🌐 Webinterface im Browser (Smartphone & PC)
-* 🔄 Echtzeit-Updates via WebSocket
-* 🔘 Steuerung über Hardware-Taster
-* 💻 Steuerung über serielle Schnittstelle
+* ⏱️ Timer / stopwatch with millisecond precision
+* 📡 Built-in Wi-Fi access point (no router required)
+* 🌐 Browser-based web interface (mobile & desktop)
+* 🔄 Real-time updates via WebSocket
+* 🔘 Hardware button control
+* 💻 Serial control interface
 
 ---
 
 ## 🧰 Hardware
 
 * ESP32
-* Taster
+* Push button
 
-### 🔌 Verdrahtung
+### 🔌 Wiring
 
 ```
-3V3 ─── Taster ─── GPIO27
+3V3 ─── Button ─── GPIO27
 ```
 
-👉 GPIO27 ist als `INPUT_PULLDOWN` konfiguriert
+👉 GPIO27 is configured as `INPUT_PULLDOWN`
 
 ---
 
-## 🎮 Bedienung
+## 🎮 Controls
 
-### 🔘 Taster
+### 🔘 Button
 
-* **Kurz drücken** → Start / Stop
-* **3 Sekunden halten** → Reset
+* **Short press** → Start / Stop
+* **Hold for 3 seconds** → Reset
 
-### 💻 Seriell (115200 Baud)
+### 💻 Serial (115200 baud)
 
-| Befehl | Funktion |
-| ------ | -------- |
-| `1`    | Start    |
-| `0`    | Stop     |
-| `r`    | Reset    |
+| Command | Function |
+| ------- | -------- |
+| `1`     | Start    |
+| `0`     | Stop     |
+| `r`     | Reset    |
 
 ---
 
-## 🌐 Webinterface
+## 🌐 Web Interface
 
-Nach dem Start erstellt der ESP32 ein WLAN:
+After boot, the ESP32 creates a Wi-Fi network:
 
 * **SSID:** `AlpenZeit`
-* **Passwort:** `alpenzeit2026`
+* **Password:** `alpenzeit2026`
 
-👉 Danach im Browser öffnen:
+👉 Open in your browser:
 
 ```
 http://192.168.4.1
@@ -84,17 +81,17 @@ http://192.168.4.1
 
 ---
 
-## ⚙️ Funktionsweise
+## ⚙️ How It Works
 
-* ESP32 läuft im **Access Point Mode**
-* HTTP-Server liefert die HTML-Oberfläche
-* WebSocket-Server sendet Live-Daten
-* Frontend interpoliert Zeit für flüssige Anzeige
-* Button wird **entprellt + Long-Press erkannt**
+* ESP32 runs in **Access Point mode**
+* HTTP server serves the web interface
+* WebSocket server streams live data
+* Frontend interpolates time for smooth display
+* Button input is **debounced + long-press detected**
 
 ---
 
-## 📁 Projektstruktur
+## 📁 Project Structure
 
 ```
 Alpenzeit/
@@ -110,31 +107,41 @@ Alpenzeit/
 
 ## 🚀 Installation
 
-1. Projekt in Arduino IDE öffnen
-2. ESP32 Board auswählen
-3. Hochladen
-4. Mit WLAN `AlpenZeit` verbinden
-5. Browser öffnen → `192.168.4.1`
+1. Open the project in Arduino IDE
+2. Select your ESP32 board
+3. Upload the code
+4. Connect to Wi-Fi `AlpenZeit`
+5. Open `192.168.4.1` in your browser
 
 ---
 
-## 📦 Abhängigkeiten
+## 📦 Dependencies
 
-Arduino Libraries:
+Required Arduino libraries:
 
 * `WiFi.h`
 * `WebServer.h`
 * `WebSocketsServer.h`
-  👉 **WebSockets by Markus Sattler installieren**
+
+⚠️ **Important:**
+You must manually install:
+
+👉 **WebSockets by Markus Sattler**
+
+Install via Arduino IDE:
+
+1. Open Library Manager
+2. Search for **WebSockets**
+3. Install *WebSockets by Markus Sattler*
 
 ---
 
-## 📄 Lizenz
+## 📄 License
 
-Dieses Projekt ist nur für private und nicht-kommerzielle Nutzung bestimmt.
+This project is intended for private and non-commercial use only.
 
 ---
 
-## 👤 Autor
+## 👤 Author
 
 flox86

@@ -1,4 +1,4 @@
-# AlpenZeit
+# Alpenzeit
 
 ![Platform](https://img.shields.io/badge/platform-ESP32-blue)
 ![Arduino](https://img.shields.io/badge/framework-Arduino-green)

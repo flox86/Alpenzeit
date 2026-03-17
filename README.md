@@ -129,31 +129,6 @@ Arduino Libraries:
 
 ---
 
-## 🎬 GIF erstellen (optional, aber sehr empfehlenswert)
-
-Für ein richtig starkes Repo:
-
-### Option 1 (einfach)
-
-* Bildschirm aufnehmen (z. B. mit OBS)
-* Mit Tool wie:
-
-  * https://ezgif.com/video-to-gif
-
-### Option 2 (Pro)
-
-* Tool: **ScreenToGif**
-* Schneiden + optimieren
-* Export als `.gif`
-
-👉 Dann speichern als:
-
-```
-docs/demo.gif
-```
-
----
-
 ## 📄 Lizenz
 
 Dieses Projekt ist nur für private und nicht-kommerzielle Nutzung bestimmt.

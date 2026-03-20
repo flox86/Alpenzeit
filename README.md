@@ -19,6 +19,10 @@ ESP32-based timer with Wi-Fi access point, push button control and a modern web 
 
 ![Demo](docs/demo.gif)
 
+### In Action (GIF)
+
+![Demo](docs/Function.gif)
+
 ---
 
 ### Case for Button (Makerworld)

@@ -26,8 +26,10 @@ ESP32-based timer with Wi-Fi access point, push button control and a modern web 
 ---
 
 ### Case for Button (Makerworld)
+
 [Case on Makerworld](https://makerworld.com/de/models/2538208-case-for-large-arcade-button-with-led-60mm-white#profileId-2794144)
-![](docs/case.png)
+
+![](docs/Button_final.png)
 
 ## ✨ Features
 
